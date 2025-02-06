@@ -65,15 +65,15 @@ class Userbot:
         )
 
     async def start(self):
-        LOGGER(__name__).info("Annie's Assistant starting...")
+        LOGGER(__name__).info("Assistant starting...")
         if self.one:
             await self.one.start()
             try:
-                await self.one.join_chat("Dora_hub")
-                await self.one.join_chat("loggchk")
-                await self.one.join_chat("FlashXSupport")
-                await self.one.join_chat("FlashXNetwork")
-                await self.one.join_chat("JARVIS_V_SUPPORT")
+                await self.one.join_chat("RADHA_MUSIC_SUPPORT")
+                await self.one.join_chat("FRIEND_KI_MASTI_CLUB")
+                await self.one.join_chat("GOOGLE_MUSIC_UPDATE")
+                await self.one.join_chat("NAINCY_UPDATES")
+                await self.one.join_chat("Vishnusoni_14")
             except Exception as e:
                 LOGGER(__name__).warning(f"Assistant 1 failed to join chats: {e}")
             assistants.append(1)
@@ -94,11 +94,11 @@ class Userbot:
         if self.two:
             await self.two.start()
             try:
-                await self.two.join_chat("Dora_hub")
-                await self.two.join_chat("loggchk")
-                await self.two.join_chat("FlashXSupport")
-                await self.two.join_chat("FlashXNetwork")
-                await self.two.join_chat("JARVIS_V_SUPPORT")
+                await self.two.join_chat("RADHA_MUSIC_SUPPORT")
+                await self.two.join_chat("FRIEND_KI_MASTI_CLUB")
+                await self.two.join_chat("GOOGLE_MUSIC_UPDATE")
+                await self.two.join_chat("NAINCY_UPDATES")
+                await self.two.join_chat("Vishnusoni_14")
             except Exception as e:
                 LOGGER(__name__).warning(f"Assistant 2 failed to join chats: {e}")
             assistants.append(2)
